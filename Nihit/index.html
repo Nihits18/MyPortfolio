@@ -26,6 +26,7 @@
             <a href="#about">About</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
+
         </nav>
     </header>
 
@@ -62,26 +63,40 @@
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                 <p class="tab-links" onclick="opentab('experience')">Experience</p>
                 <p class="tab-links" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('certificate')">Certifications</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
                 <ul>
-                    <li><span>Video Editing</span><br>Designing</li>
-                    <li><span>Video Editing</span><br>Designing</li>
-                    <li><span>Video Editing</span><br>Designing</li>
+                    <li><span>Video Editing</span><br>Adobe Premiere Pro<br>Adobe After Effects<br>Adobe Light Room<br>Canva</li>
+                    <li><span>Video Graphing</span><br>Filmmaking<br>Camera Operating<br>Strategic Planning</li>
+                    <li><span>Soft Skills</span><br>Leadership<br>Communication<br>Team Coordination</li>
                 </ul>
             </div>
             <div class="tab-contents" id="experience">
                 <ul>
-                    <li><span>2024</span><br>Designing</li>
-                    <li><span>2023</span><br>Designing</li>
-                    <li><span>2022</span><br>Designing</li>
+                    <li><span>Filmmaking Assistant/ Filmrecipe/ Hybrid</span><br>Feb 2024- Present</li>
+                    <li><span>Social Media Manager/ Shoolini Centre for Online and Distance Learning/ Solan</span><br>March 2023 - June 2023</li>
+                    <li><span>Video Editor/ Netilly/ Online</span><br>March 2023- July 2023</li>
+                    <li><span>Video Production Intern/ Shoolini University/ Solan</span><br>Aug 2022- Nov 2022</li>
+                    <li><span>Producer/ Neewshound/ Online</span><br>Oct 2021- Oct 2022</li>
+                    
                 </ul>
             </div>
             <div class="tab-contents" id="education">
                 <ul>
-                    <li><span>2021-2024</span><br>Designing</li>
-                    <li><span>2021</span><br>Designing</li>
-                    <li><span>2019</span><br>Designing</li>
+                    <li><span>2021-2024</span><br>Bachelor in Journalism and Mass Communication / Shoolini University / Solan<br>8.1 OGPA (current)</li>
+                    <li><span>2021</span><br>Central Board of Secondary Education (12th Class) / St. Francis School / Ghaziabad<br>91% (Commerce)</li>
+                    <li><span>2019</span><br>Central Board of Secondary Education (10th Class) / St. Francis School / Ghaziabad<br>84.4%</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="certificate">
+                <ul>
+                    <li><span>Adobe Premiere Pro CC Essential Video Editing - Udemy</span></li>
+                    <li><span>Movies & Application Extensibility - Skillsoft</span></li>
+                    <li><span>Premiere Pro Fundamentals - Skillsoft</span></li>
+                    <li><span>Business Writing - Coursera</span></li>
+                    <li><span>Adobe Premiere Pro Ultimate Guide 2022 - Udemy</span></li>
+                    <li><span>DaVinci Resolve: Video editing course - Udemy</span></li>
                 </ul>
             </div>
         </div>
@@ -132,14 +147,14 @@
     <!-- contact -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="#">
+        <form id="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="E-Mail Address">
-                <input type="text" placeholder="Subject">
+                <input type="text" placeholder="Your Name" id="name">
+                <input type="email" placeholder="E-Mail Address" id="email">
+                <!-- <input type="text" placeholder="Subject" id="Subject"> -->
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" id="message"></textarea>
+            <button class="btn" onclick="sendMail()">Send Message</button>
         </form>
     </section>
 
