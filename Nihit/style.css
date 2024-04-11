@@ -204,7 +204,6 @@ span{
 }
 .about-content p{
     font-size: 2rem;
-    margin: 2rem 0 3rem;
 }
 .tab-titles{
     display: flex;
@@ -466,6 +465,7 @@ span{
     .contact form .input-box input{
         width: 100%;
     }
+
 }
 @media(max-width: 365px) {
     .home-img img{
